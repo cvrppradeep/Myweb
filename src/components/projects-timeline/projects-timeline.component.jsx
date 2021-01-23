@@ -3,6 +3,9 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 // projects
 import L_TIKTOK from "../../assets/img/projects/tiktokclone1.png";
+import L_UDEMY from "../../assets/img/projects/udemy.jpg";
+import L_BOOTSTRAP5 from "../../assets/img/projects/bootstrap.png";
+
 import L_KASHWARE from "../../assets/img/projects/Kashware.png";
 import L_THENEXT from "../../assets/img/projects/The Next Cart.png";
 import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
@@ -43,6 +46,118 @@ const TimeLine = () => {
       <Timeline>
         <Events>
         {/* Project: Todo List With MUI */}
+          
+          
+          
+          
+          
+       <ImageEvent
+            date="09/01/2021"
+            className="text-center"
+            text="Udemy"
+            src={L_UDEMY}
+            alt="Udemy"
+          >
+            <div className="d-flex justify-content-between flex-column mt-1">
+              <div>
+                <Accordion>
+                  <Card>
+                    <Accordion.Toggle
+                      as={Card.Header}
+                      eventKey="0"
+                      className="p-2 text-center accordian-main"
+                    >
+                      PROJECT DETAILS
+                    </Accordion.Toggle>
+
+                    <Accordion.Collapse eventKey="0" className="text-left">
+                      <Card.Body>
+                        <strong>Description:</strong> This is a clone  of Udemy created with Vuejs and  Bootstrap 5  .
+                        <hr />
+                        <strong>Features:</strong>
+                        <ul className="list-styles pt-1">
+                          <li>you can Share Your Recorded educational Video for that everyone can watch</li>
+                          <li>Powered by vuejs and Bootstrap 5</li>
+                          <li>Respoisive Design</li>
+                        </ul>
+                        <hr />
+                        <strong>Tech used:</strong>
+                        <ul>
+                         
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_CSS3}
+                                alt="CSS 3"
+                                rounded
+                                className="image-style m-1"
+                              ></Image>{" "}
+                              CSS3
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_VUE}
+                                alt="L_VUE"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                             Vue.js
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={L_BOOTSTRAP5}
+                                alt="Material-UI"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                             BOOTSTRAP5
+                            </span>
+                          </li>
+                          
+                        </ul>
+                      </Card.Body>
+                    </Accordion.Collapse>
+                  </Card>
+                </Accordion>
+              </div>
+              <div className="d-flex justify-content-between flex-nowrap text-center">
+                {/* <UrlButton
+                  href="https://cvrppradeep.github.io/"
+                  target="_blank"
+                >
+                  SEE LIVE
+                </UrlButton> */}
+                <UrlButton
+                  href="https://github.com/cvrppradeep/bootstrap-vue"
+                  target="_blank"
+                >
+                  SOURCE CODE
+                </UrlButton>
+                {/* <UrlButton
+                  href="https://www.linkedin.com/posts/98a4_react-materialui-fun-activity-6716765686963826688-GIpZ"
+                  target="_blank"
+                >
+                  WATCH VIDEO
+                </UrlButton> */}
+              </div>
+            </div>
+          </ImageEvent>
+
+   
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
         <ImageEvent
             date="01/10/2020"
             className="text-center"
